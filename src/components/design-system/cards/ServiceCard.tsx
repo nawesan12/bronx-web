@@ -18,7 +18,7 @@ export default function ServiceCard({
         alt="Taller El Bronx"
         width={800}
         height={800}
-        className="overflow-hidden object-cover rounded-xl h-full w-full lg:w-5/12"
+        className="overflow-hidden object-cover rounded-xl h-full w-full lg:min-w-[200px] lg:max-w-[200px]"
       />
 
       <div className="px-4">
