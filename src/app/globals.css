@@ -78,26 +78,62 @@
   background: transparent;
 }
 
-.marquee {
+.wrapper {
   position: relative;
-  width: 100vw;
-  max-width: 100%;
-  height: 200px;
-  overflow-x: hidden;
+  left: 0;
+  margin-inline: auto;
+  height: 100px;
+  margin-top: 5rem;
+  overflow: hidden;
 }
 
-.track {
-  position: absolute;
-  white-space: nowrap;
-  will-change: transform;
-  animation: marquee 32s linear infinite;
-}
-
-@keyframes marquee {
-  from {
-    transform: translateX(0);
-  }
+@keyframes scrollLeft {
   to {
-    transform: translateX(-50%);
+    left: -200px;
   }
+}
+
+.item {
+  position: absolute;
+  left: max(calc(200px * 8), 100%);
+  animation-name: scrollLeft;
+  animation-duration: 30s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.wrapper:hover .item {
+  animation-play-state: paused; /* Pause animation on hover */
+}
+
+.item1 {
+  animation-delay: calc(30s / 8 * (8 - 1) * -1);
+}
+
+.item2 {
+  animation-delay: calc(30s / 8 * (8 - 2) * -1);
+}
+
+.item3 {
+  animation-delay: calc(30s / 8 * (8 - 3) * -1);
+}
+
+.item4 {
+  animation-delay: calc(30s / 8 * (8 - 4) * -1);
+}
+
+.item5 {
+  animation-delay: calc(30s / 8 * (8 - 5) * -1);
+}
+
+.item6 {
+  animation-delay: calc(30s / 8 * (8 - 6) * -1);
+}
+
+.item7 {
+  animation-delay: calc(30s / 8 * (8 - 7) * -1);
+}
+
+.item8 {
+  animation-delay: calc(30s / 8 * (8 - 8) * -1);
 }

@@ -1,98 +1,41 @@
-import Logo from "@/components/design-system/images/Logo";
 import Marquee from "@/components/design-system/marquee/Marquee";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
-import LenisController from "@/components/scroll/LenisController";
 import ScrollerWheel from "@/components/scroll/ScrollerWheel";
 import Banner from "@/components/sections/Banner";
 import Contact from "@/components/sections/Contact";
 import Hero from "@/components/sections/Hero";
 import Services from "@/components/sections/Services";
 import Teaser from "@/components/sections/Teaser";
-import Image from "next/image";
 
 export default function Home() {
   return (
-    <LenisController>
+    <>
       <ScrollerWheel />
+      <div className="lg:max-w-7xl lg:mx-auto px-4 relative">
+        <Header />
+        <Hero />
+      </div>
 
-      <Header />
-      <Hero />
+      <Marquee />
 
-      <Marquee>
-        <Logo />
-        <Image
-          src="/logo/bronx-yellow.png"
-          alt="Taller El Bronx"
-          width={200}
-          height={74}
-        />
-        <Image
-          src="/logo/bronx-cyan.png"
-          alt="Taller El Bronx"
-          width={200}
-          height={74}
-        />
-        <Image
-          src="/logo/bronx-lila.png"
-          alt="Taller El Bronx"
-          width={200}
-          height={74}
-        />
-      </Marquee>
+      <div className="lg:max-w-7xl lg:mx-auto px-4 relative">
+        <Services />
+        <Banner />
+      </div>
 
-      <Services />
-      <Banner />
+      <Marquee />
 
-      <Marquee>
-        <Logo />
-        <Image
-          src="/logo/bronx-yellow.png"
-          alt="Taller El Bronx"
-          width={200}
-          height={74}
-        />
-        <Image
-          src="/logo/bronx-cyan.png"
-          alt="Taller El Bronx"
-          width={200}
-          height={74}
-        />
-        <Image
-          src="/logo/bronx-lila.png"
-          alt="Taller El Bronx"
-          width={200}
-          height={74}
-        />
-      </Marquee>
+      <div className="lg:max-w-7xl lg:mx-auto px-4 relative">
+        <Teaser />
+        <Contact />
+      </div>
 
-      <Teaser />
+      <Marquee />
 
-      <Contact />
-
-      <Marquee>
-        <Logo />
-        <Image
-          src="/logo/bronx-yellow.png"
-          alt="Taller El Bronx"
-          width={200}
-          height={74}
-        />
-        <Image
-          src="/logo/bronx-cyan.png"
-          alt="Taller El Bronx"
-          width={200}
-          height={74}
-        />
-        <Image
-          src="/logo/bronx-lila.png"
-          alt="Taller El Bronx"
-          width={200}
-          height={74}
-        />
-      </Marquee>
-
-      <Footer />
-    </LenisController>
+      <div className="lg:max-w-7xl lg:mx-auto px-4 relative">
+        <Footer />
+      </div>
+    </>
   );
 }

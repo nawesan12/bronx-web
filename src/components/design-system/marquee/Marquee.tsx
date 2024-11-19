@@ -1,49 +1,71 @@
-"use client";
-import { useEffect, useRef } from "react";
-import { gsap } from "gsap";
+import Image from "next/image";
+import Logo from "../images/Logo";
 
-const Marquee = ({ children }: { children: React.ReactNode }) => {
-  const marqueeRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    // Ensure this code runs only on the client
-    if (typeof window !== "undefined") {
-      const marquee = marqueeRef.current;
-
-      if (marquee) {
-        const totalWidth = marquee.scrollWidth; // Calculate total width of content
-        const containerWidth = marquee.offsetWidth; // Visible container width
-
-        // Duplicate content to fill any gaps
-        if (totalWidth < containerWidth) {
-          const repeats = Math.ceil(containerWidth / totalWidth) + 1; // Extra repeat for seamless effect
-          for (let i = 0; i < repeats; i++) {
-            const clonedContent = marquee.innerHTML;
-            marquee.innerHTML += clonedContent; // Append duplicated content
-          }
-        }
-
-        // Use GSAP to animate the marquee
-        gsap.to(marquee, {
-          x: `-${totalWidth}px`, // Move marquee to the left
-          ease: "none", // Linear scrolling
-          duration: 20, // Duration depends on speed
-          repeat: -1, // Infinite loop
-        });
-      }
-    }
-  }, []);
-
+const Marquee = () => {
   return (
-    <div
-      ref={marqueeRef}
-      className="marquee-container overflow-hidden whitespace-nowrap flex"
-      style={{
-        willChange: "transform",
-      }}
-    >
-      {children}
-    </div>
+    <section className="wrapper">
+      <article className="item item1">
+        <Logo />
+      </article>
+
+      <article className="item item2">
+        <Image
+          src="/logo/bronx-yellow.png"
+          alt="Taller El Bronx"
+          width={200}
+          height={74}
+        />
+      </article>
+
+      <article className="item item3">
+        <Image
+          src="/logo/bronx-cyan.png"
+          alt="Taller El Bronx"
+          width={200}
+          height={74}
+        />
+      </article>
+
+      <article className="item item4">
+        <Image
+          src="/logo/bronx-lila.png"
+          alt="Taller El Bronx"
+          width={200}
+          height={74}
+        />
+      </article>
+
+      <article className="item item5">
+        <Logo />
+      </article>
+
+      <article className="item item6">
+        <Image
+          src="/logo/bronx-yellow.png"
+          alt="Taller El Bronx"
+          width={200}
+          height={74}
+        />
+      </article>
+
+      <article className="item item7">
+        <Image
+          src="/logo/bronx-cyan.png"
+          alt="Taller El Bronx"
+          width={200}
+          height={74}
+        />
+      </article>
+
+      <article className="item item8">
+        <Image
+          src="/logo/bronx-lila.png"
+          alt="Taller El Bronx"
+          width={200}
+          height={74}
+        />
+      </article>
+    </section>
   );
 };
 

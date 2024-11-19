@@ -8,7 +8,7 @@ export default function Hero() {
         alt=""
         width={1068}
         height={730}
-        className="mx-auto max-h-[530px] w-auto"
+        className="mx-auto max-h-[620px] w-auto"
         draggable={false}
       />
       <p className="text-center mx-auto max-w-md text-[#663399] text-2xl">
