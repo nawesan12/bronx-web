@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <section className="my-6 space-y-11 relative z-40">
+    <section className="my-6 space-y-11 relative z-40" id="inicio">
       <Image
         src="/hero-banner.webp"
         alt=""

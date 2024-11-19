@@ -9,7 +9,10 @@ export default function Contact() {
     <>
       <SectionTitle text="Cuenta con Nosotros" />
 
-      <section className="rounded-xl w-full lg:bg-none flex flex-col lg:flex-row justify-between gap-4 my-6 p-4 lg:p-0 relative z-40">
+      <section
+        className="rounded-xl w-full lg:bg-none flex flex-col lg:flex-row justify-between gap-4 my-6 p-4 lg:p-0 relative z-40"
+        id="contacto"
+      >
         <Image
           src="/banner-volante.webp"
           alt=""
