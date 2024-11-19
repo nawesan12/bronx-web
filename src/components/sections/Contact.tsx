@@ -22,7 +22,7 @@ export default function Contact() {
             Dejanos tu consulta
           </h2>
 
-          <section className="flex flex-col lg:flex-row gap-4 mt-4">
+          <section className="flex flex-col lg:flex-row lg:gap-4 mt-4">
             <Input
               placeholder="Nombre completo"
               className="my-2 p-4 h-[60] bg-[#d9d9d9] text-[#000000AA] font-medium"
@@ -34,7 +34,7 @@ export default function Contact() {
             />
           </section>
 
-          <section className="flex flex-col lg:flex-row gap-4">
+          <section className="flex flex-col lg:flex-row lg:gap-4">
             <Input
               placeholder="Telefono o celular"
               className="my-2 p-4 h-[60] bg-[#d9d9d9] text-[#000000AA] font-medium"

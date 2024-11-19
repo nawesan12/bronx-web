@@ -12,13 +12,13 @@ export default function ServiceCard({
   image,
 }: ServiceCardProps) {
   return (
-    <article className="bg-[#eee] w-full rounded-xl flex p-4">
+    <article className="bg-[#eee] w-full flex flex-col lg:flex-row rounded-xl gap-4 lg:h-60 p-4">
       <Image
         src={image}
         alt="Taller El Bronx"
         width={800}
         height={800}
-        className="overflow-hidden rounded-xl w-5/12"
+        className="overflow-hidden object-cover rounded-xl h-full w-full lg:w-5/12"
       />
 
       <div className="px-4">
