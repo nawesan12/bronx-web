@@ -2,13 +2,13 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <section className="my-11 space-y-11">
+    <section className="my-11 space-y-11 relative z-40">
       <Image
         src="/hero-banner.png"
         alt=""
         width={1068}
         height={730}
-        className="mx-auto"
+        className="mx-auto max-h-[530px] w-auto"
         draggable={false}
       />
       <p className="text-center mx-auto max-w-md text-[#663399] text-2xl">

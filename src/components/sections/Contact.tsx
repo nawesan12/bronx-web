@@ -10,7 +10,7 @@ export default function Contact() {
     <>
       <SectionTitle text="Contacto" />
 
-      <section className="rounded-xl w-full lg:bg-none flex flex-col lg:flex-row justify-between items-center gap-11 my-11 p-4 lg:p-0">
+      <section className="rounded-xl w-full lg:bg-none flex flex-col lg:flex-row justify-between items-center gap-11 my-11 lg:p-4 lg:p-0 relative z-40">
         <Image
           src="/banner-volante.jpg"
           alt=""
