@@ -1,6 +1,6 @@
 export default function Teaser() {
   return (
-    <section className="my-11 relative z-40">
+    <section className="mb-11 relative z-40">
       <video
         className="min-w-screen rounded-xl"
         preload="none"

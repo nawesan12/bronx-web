@@ -1,3 +1,4 @@
+import WhatsappButton from "@/components/design-system/buttons/WhatsappButton";
 import Marquee from "@/components/design-system/marquee/Marquee";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
@@ -12,6 +13,8 @@ export default function Home() {
   return (
     <>
       <ScrollerWheel />
+      <WhatsappButton />
+
       <div className="lg:max-w-7xl lg:mx-auto px-4 relative">
         <Header />
         <Hero />
@@ -21,13 +24,14 @@ export default function Home() {
 
       <div className="lg:max-w-7xl lg:mx-auto px-4 relative">
         <Services />
-        <Banner />
       </div>
+
+      <Banner />
+      <Teaser />
 
       <Marquee />
 
       <div className="lg:max-w-7xl lg:mx-auto px-4 relative">
-        <Teaser />
         <Contact />
       </div>
 

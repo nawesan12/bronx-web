@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <section className="my-11 space-y-11 relative z-40">
+    <section className="my-6 space-y-11 relative z-40">
       <Image
         src="/hero-banner.webp"
         alt=""
@@ -12,8 +12,8 @@ export default function Hero() {
         draggable={false}
       />
       <p className="text-center mx-auto max-w-md text-[#663399] text-2xl">
-        We guarantee the selection of the best automobile offer on the German
-        market, ensuring its technical and legal integrity.
+        Garantizamos el mejor servicio de reparacion automovil en{" "}
+        <b>Mar del Plata</b> y vendemos productos de alta calidad.
       </p>
     </section>
   );

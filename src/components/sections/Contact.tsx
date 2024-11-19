@@ -2,41 +2,44 @@ import Image from "next/image";
 import SectionTitle from "../design-system/titles/SectionTitle";
 import { Input } from "../ui/input";
 import { Textarea } from "../ui/textarea";
-import { Label } from "../ui/label";
 import { Button } from "../ui/button";
 
 export default function Contact() {
   return (
     <>
-      <SectionTitle text="Contacto" />
+      <SectionTitle text="Cuenta con Nosotros" />
 
-      <section className="rounded-xl w-full lg:bg-none flex flex-col lg:flex-row justify-between items-center gap-11 my-11 lg:p-4 lg:p-0 relative z-40">
+      <section className="rounded-xl w-full lg:bg-none flex flex-col lg:flex-row justify-between gap-4 my-6 p-4 lg:p-0 relative z-40">
         <Image
           src="/banner-volante.webp"
           alt=""
           width={1000}
           height={1000}
-          className="h-96 w-full object-cover overflow-hidden rounded-xl"
+          className="h-96 lg:h-full w-full object-cover overflow-hidden rounded-xl"
         />
-        <article className="bg-white rounded-lg w-full lg:w-[700px] space-y-4 p-0 lg:p-4">
-          <h2 className="font-semibold text-[#663399] text-center text-2xl">
-            DEJANOS TU CONSULTA
+        <article className="bg-white rounded-lg w-full p-0">
+          <h2 className="font-semibold text-[#663399] text-left text-4xl">
+            Dejanos tu consulta
           </h2>
-          <div>
-            <Label>Nombre Completo</Label>
+
+          <section className="flex flex-col lg:flex-row gap-4 mt-4">
             <Input placeholder="Nombre completo" className="my-2 p-4" />
-          </div>
 
-          <div>
-            <Label>Telefono</Label>
+            <Input placeholder="Apellido" className="my-2 p-4" />
+          </section>
+
+          <section className="flex flex-col lg:flex-row gap-4">
             <Input placeholder="Telefono o celular" className="my-2 p-4" />
-          </div>
+            <Input
+              placeholder="Marca de auto y modelo (opcional)"
+              className="my-2 p-4"
+            />
+          </section>
 
           <div>
-            <Label>Mensaje</Label>
             <Textarea
               placeholder="Deja tu mensaje o consulta"
-              className="my-2 p-4"
+              className="my-2 p-4 pb-24"
             />
           </div>
 
