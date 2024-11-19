@@ -6,40 +6,41 @@ const Marquee = ({ children }: { children: React.ReactNode }) => {
   const marqueeRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    const marquee = marqueeRef.current;
+    // Ensure this code runs only on the client
+    if (typeof window !== "undefined") {
+      const marquee = marqueeRef.current;
 
-    if (marquee) {
-      const items = Array.from(marquee.children) as HTMLElement[];
-      const totalWidth = items.reduce((sum, item) => sum + item.offsetWidth, 0);
+      if (marquee) {
+        const totalWidth = marquee.scrollWidth; // Calculate total width of content
+        const containerWidth = marquee.offsetWidth; // Visible container width
 
-      // Ensure total width covers the screen
-      if (totalWidth < window.innerWidth) {
-        const repeats = Math.ceil(window.innerWidth / totalWidth) + 1;
-
-        // Clone and append children to avoid gaps
-        for (let i = 0; i < repeats; i++) {
-          items.forEach((item) => {
-            const clone = item.cloneNode(true) as HTMLElement;
-            marquee.appendChild(clone);
-          });
+        // Duplicate content to fill any gaps
+        if (totalWidth < containerWidth) {
+          const repeats = Math.ceil(containerWidth / totalWidth) + 1; // Extra repeat for seamless effect
+          for (let i = 0; i < repeats; i++) {
+            const clonedContent = marquee.innerHTML;
+            marquee.innerHTML += clonedContent; // Append duplicated content
+          }
         }
-      }
 
-      // Animate the marquee
-      gsap.to(marquee, {
-        x: `-${totalWidth}px`,
-        ease: "none",
-        duration: 20,
-        repeat: -1,
-      });
+        // Use GSAP to animate the marquee
+        gsap.to(marquee, {
+          x: `-${totalWidth}px`, // Move marquee to the left
+          ease: "none", // Linear scrolling
+          duration: 20, // Duration depends on speed
+          repeat: -1, // Infinite loop
+        });
+      }
     }
   }, []);
 
   return (
     <div
       ref={marqueeRef}
-      className="marquee overflow-hidden whitespace-nowrap flex"
-      style={{ willChange: "transform" }}
+      className="marquee-container overflow-hidden whitespace-nowrap flex"
+      style={{
+        willChange: "transform",
+      }}
     >
       {children}
     </div>

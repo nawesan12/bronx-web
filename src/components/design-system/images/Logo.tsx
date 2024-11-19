@@ -7,6 +7,7 @@ export default function Logo() {
       alt="Taller El Bronx"
       width={200}
       height={74}
+      className="object-contain"
     />
   );
 }

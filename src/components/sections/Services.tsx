@@ -17,6 +17,16 @@ export default function Services() {
             description="lorem ipsum"
             image="/banner-taller.jpg"
           />
+          <ServiceCard
+            title="Reparacion"
+            description="lorem ipsum"
+            image="/banner-taller.jpg"
+          />
+          <ServiceCard
+            title="Reparacion"
+            description="lorem ipsum"
+            image="/banner-taller.jpg"
+          />
         </section>
       </section>
     </>

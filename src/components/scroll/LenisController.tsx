@@ -7,8 +7,8 @@ export default function LenisController({
 }: {
   children: React.ReactNode;
 }) {
-  const lenis = new Lenis();
   useEffect(() => {
+    const lenis = new Lenis();
     function raf(time: number) {
       lenis.raf(time);
       requestAnimationFrame(raf);

@@ -77,3 +77,13 @@
 ::-webkit-scrollbar-track {
   background: transparent;
 }
+
+.marquee-container {
+  display: flex; /* Align items in a row */
+  white-space: nowrap; /* Prevent line breaks */
+  overflow: hidden; /* Hide content outside the container */
+}
+
+.marquee-item {
+  display: inline-block;
+}
