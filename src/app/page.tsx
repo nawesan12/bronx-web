@@ -12,7 +12,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <>
+    <LenisController>
       <Header />
       <Hero />
 
@@ -67,6 +67,6 @@ export default function Home() {
 
       <Contact />
       <Footer />
-    </>
+    </LenisController>
   );
 }

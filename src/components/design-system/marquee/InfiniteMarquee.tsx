@@ -38,7 +38,7 @@ const Marquee = ({ children }: { children: React.ReactNode }) => {
   return (
     <div
       ref={marqueeRef}
-      className="marquee lg:max-w-7xl lg:mx-auto overflow-hidden my-20 whitespace-nowrap flex"
+      className="marquee overflow-hidden my-20 whitespace-nowrap flex"
       style={{
         willChange: "transform",
       }}
