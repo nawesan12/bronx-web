@@ -1,5 +1,5 @@
 import Logo from "@/components/design-system/images/Logo";
-import Marquee from "@/components/design-system/marquee/InfiniteMarquee";
+import Marquee from "@/components/design-system/marquee/Marquee";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import LenisController from "@/components/scroll/LenisController";
