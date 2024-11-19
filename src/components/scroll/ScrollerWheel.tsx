@@ -39,7 +39,7 @@ export default function ScrollerWheel() {
       alt="El Bronx Taller"
       width={170}
       height={170}
-      className={`fixed -right-12 top-1/2 transform -translate-y-1/2 transition-opacity duration-300 ${
+      className={`fixed lg:block hidden -right-12 top-1/2 transform -translate-y-1/2 transition-opacity duration-300 ${
         isVisible ? "opacity-100" : "opacity-0"
       }`} // Toggle visibility with opacity
     />
