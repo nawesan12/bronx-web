@@ -10,22 +10,22 @@ export default function Services() {
           <ServiceCard
             title="Reparacion"
             description="lorem ipsum"
-            image="/banner-taller.jpg"
+            image="/banner-taller.webp"
           />
           <ServiceCard
             title="Reparacion"
             description="lorem ipsum"
-            image="/banner-taller.jpg"
+            image="/banner-taller.webp"
           />
           <ServiceCard
             title="Reparacion"
             description="lorem ipsum"
-            image="/banner-taller.jpg"
+            image="/banner-taller.webp"
           />
           <ServiceCard
             title="Reparacion"
             description="lorem ipsum"
-            image="/banner-taller.jpg"
+            image="/banner-taller.webp"
           />
         </section>
       </section>

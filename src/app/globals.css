@@ -102,10 +102,6 @@
   animation-iteration-count: infinite;
 }
 
-.wrapper:hover .item {
-  animation-play-state: paused; /* Pause animation on hover */
-}
-
 .item1 {
   animation-delay: calc(30s / 8 * (8 - 1) * -1);
 }

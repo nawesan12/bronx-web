@@ -4,7 +4,7 @@ export default function Hero() {
   return (
     <section className="my-11 space-y-11 relative z-40">
       <Image
-        src="/hero-banner.png"
+        src="/hero-banner.webp"
         alt=""
         width={1068}
         height={730}
