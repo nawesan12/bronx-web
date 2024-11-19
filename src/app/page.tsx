@@ -6,6 +6,7 @@ import ScrollerWheel from "@/components/scroll/ScrollerWheel";
 import Banner from "@/components/sections/Banner";
 import Contact from "@/components/sections/Contact";
 import Hero from "@/components/sections/Hero";
+import Location from "@/components/sections/Location";
 import Services from "@/components/sections/Services";
 import Teaser from "@/components/sections/Teaser";
 
@@ -33,6 +34,8 @@ export default function Home() {
 
       <div className="lg:max-w-7xl lg:mx-auto px-4 relative">
         <Contact />
+
+        <Location />
       </div>
 
       <Marquee />

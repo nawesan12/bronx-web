@@ -8,22 +8,22 @@ export default function Services() {
       <section className="my-6 relative z-40">
         <section className="flex flex-col lg:grid lg:grid-cols-2 items-center gap-4">
           <ServiceCard
-            title="Reparacion"
+            title="Taller Automotriz"
             description="lorem ipsum"
             image="/banner-taller.webp"
           />
           <ServiceCard
-            title="Reparacion"
+            title="Lubricentro"
             description="lorem ipsum"
             image="/banner-taller.webp"
           />
           <ServiceCard
-            title="Reparacion"
+            title="Electricidad"
             description="lorem ipsum"
             image="/banner-taller.webp"
           />
           <ServiceCard
-            title="Reparacion"
+            title="Venta de Baterias"
             description="lorem ipsum"
             image="/banner-taller.webp"
           />

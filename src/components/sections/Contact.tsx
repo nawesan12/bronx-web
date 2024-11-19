@@ -23,27 +23,36 @@ export default function Contact() {
           </h2>
 
           <section className="flex flex-col lg:flex-row gap-4 mt-4">
-            <Input placeholder="Nombre completo" className="my-2 p-4" />
+            <Input
+              placeholder="Nombre completo"
+              className="my-2 p-4 h-[60] bg-[#d9d9d9] text-[#000000AA] font-medium"
+            />
 
-            <Input placeholder="Apellido" className="my-2 p-4" />
+            <Input
+              placeholder="Apellido"
+              className="my-2 p-4 h-[60] bg-[#d9d9d9] text-[#000000AA] font-medium"
+            />
           </section>
 
           <section className="flex flex-col lg:flex-row gap-4">
-            <Input placeholder="Telefono o celular" className="my-2 p-4" />
+            <Input
+              placeholder="Telefono o celular"
+              className="my-2 p-4 h-[60] bg-[#d9d9d9] text-[#000000AA] font-medium"
+            />
             <Input
               placeholder="Marca de auto y modelo (opcional)"
-              className="my-2 p-4"
+              className="my-2 p-4 h-[60] bg-[#d9d9d9] text-[#000000AA] font-medium"
             />
           </section>
 
           <div>
             <Textarea
               placeholder="Deja tu mensaje o consulta"
-              className="my-2 p-4 pb-24"
+              className="my-2 p-4 h-[137px] bg-[#d9d9d9] text-[#000000AA] font-medium"
             />
           </div>
 
-          <Button className="w-full">Enviar</Button>
+          <Button className="w-full h-[60px]">Enviar</Button>
         </article>
       </section>
     </>
